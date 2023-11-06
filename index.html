@@ -1,51 +1,121 @@
-<!--
-  Hit RUN to see this project in action!
-  
-  This project will auto-refresh as you edit the HTML, CSS and JS. See README.md for more info (including how to disable auto-refresh and install packages).
--->
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Title</title>
 </head>
 
 <body>
-  <main>
-    <h1 class="title">Welcome to HTML on Replit!</h1>
-    <p class="description">Get started by editing
-      <code class="code">index.html</code>. The webview will auto-refresh as you edit! (See <code
-        class="code">README.md</code> if you want to
-      disable auto-refresh.)
-    </p>
 
-    <section class="grid">
-      <a href="https://replit.com/learn" class='card'>
-        <h2>Learn &rarr;</h2>
-        <p>Find tutorials on Replit to learn more.</p>
-      </a>
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark py-2 fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">Adam's Webpage</a>
 
-      <a href="https://docs.replit.com/category/deployments" class='card'>
-        <h2>Deploy &rarr;</h2>
-        <p>
-          After you are happy with this app, deploy it on Replit!
-        </p>
-      </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#welcome" class="nav-link">Selection 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#cards" class="nav-link">Selection 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#faq" class="nav-link">Selection 3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="welcome" class="bg-primary text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1><span class="text-light">Welcome to my website!</span></h1>
+                    <p class="lead my-4">
+                        This is a new website about nothing in particular.
+                    </p>
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
+                        Hello World
+                    </button>
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block" src="img/showcase.svg" alt="" />
+            </div>
+        </div>
     </section>
-  </main>
+    <section id="cards" class="p-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-person-square"></i>
+                            </div>
+                            <h3 class="card-title mb-3">This is a card.</h3>
+                            <p class="card-text">
+                                Nothing to write about here.
+                            </p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+              <div class="container">
+                <div class="row text-center g-4">
+                    <div class="col-md">
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-person-square"></i>
+                                </div>
+                                <h3 class="card-title mb-3">This is a card.</h3>
+                                <p class="card-text">
+                                    Nothing to write about here.
+                                </p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+            
+    </section>
+    <section id="questions" class="p-5">
+        <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Do you want to know more?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+          </div>
+        </div>
+    </section>
+    <section id="faq" class="bg-primary text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3 mb-md-0">Learn More</h3>
 
-  <script type="module" src="script.js"></script>
-
-  <!--
-    This script places a badge on your repl's full-browser view back to your repl's cover
-    page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-    teal, blue, blurple, magenta, pink!
-  -->
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+                <div class="input-group news-input">
+                    <input type="text" class="form-control" placeholder="Enter Email" />
+                    <button class="btn btn-dark btn-lg" type="button">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
